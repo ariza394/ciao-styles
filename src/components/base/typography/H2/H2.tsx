@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './H2.module.scss';
 
 interface Props {

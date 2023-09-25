@@ -1,3 +1,4 @@
+import React from 'react'
 import './Paragraph.scss'
 
 interface Props {

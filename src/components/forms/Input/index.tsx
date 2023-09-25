@@ -1,2 +1,2 @@
-import Input from './Input.tsx'
+import Input from './Input'
 export default Input;
