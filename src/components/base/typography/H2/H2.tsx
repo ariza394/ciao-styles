@@ -14,16 +14,18 @@ interface Props {
     * Color to of the text
     */
     color?: 'primary' | 'secondary' | 'sand' | 'cold' | '';
+    style?: React.CSSProperties;
 }
 
 const H2 = ({
     fontStyle = 'bangers',
     color = '',
     children,
+    style,
 }:Props) => {
     const combinedStyles = `${styles[fontStyle]} big ${styles[color]}`;
     return ( 
-        <h1 className={combinedStyles}>{children}</h1>
+        <h2 className={combinedStyles} style={style}>{children}</h2>
     );  
 }
  

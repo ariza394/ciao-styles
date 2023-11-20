@@ -4,6 +4,6 @@ import Paragraph from "./base/typography/Paragraph";
 import Button from "./button";
 import Input from "./forms/Input";
 import Loading from "./ui/loading/Loading";
+import theme from "./abstracts/theme";
 
-
-export { Button, H1, H2, Paragraph, Input, Loading };
+export { Button, H1, H2, Paragraph, Input, Loading, theme  };

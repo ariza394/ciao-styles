@@ -1,5 +1,5 @@
 import React from 'react'
-import './Paragraph.scss'
+import styles from './Paragraph.module.scss'
 
 interface Props {
     /**
@@ -13,7 +13,7 @@ interface Props {
     /**
     * Size of the text
     */
-    size?:  'micro' | 'normalSize' | 'large' | 'xLarge';
+    size?: 'micro' | 'normalSize' | 'large' | 'xLarge';
     /**
     * Weight of the text
     */
@@ -22,6 +22,7 @@ interface Props {
     * Color of the text
     */
     color?: 'primary' | 'secondary' | 'sand' | 'cold' | 'black';
+    style?: React.CSSProperties;
 }
 
 const Paragraph = ({
@@ -30,10 +31,13 @@ const Paragraph = ({
     size = 'normalSize',
     bold = 'normalBold',
     color = 'black',
-}:Props) => {
-    return ( 
-        <p className={`${fontStyle} ${size} ${bold} ${color}`}>{children}</p>
-    );  
+    style,
+}: Props) => {
+    return (
+        <p className={`${styles[fontStyle]} ${styles[size]} ${styles[bold]} ${styles[color]}`} style={style} >
+            {children}
+        </p>
+    );
 }
- 
+
 export default Paragraph;

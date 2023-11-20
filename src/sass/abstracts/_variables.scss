@@ -11,3 +11,17 @@ $white: #ffffff;
 
 // Margins
 $border-radius: 5px;
+
+
+
+:export {
+    primary: $primary;
+    secondary: $secondary;
+    sand: $sand;
+    cold: $cold;
+    success : $success;
+    danger: $danger;
+    warning: $warning;
+    info: $info;
+    white: $white;
+  }
